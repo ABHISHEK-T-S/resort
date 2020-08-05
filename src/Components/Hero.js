@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Hero(children , hero) {
+function Hero({children , hero}) {
     return (
         
             <header className={hero}>
@@ -8,6 +8,9 @@ function Hero(children , hero) {
             </header>
         
     )
+}
+Hero.defaultProps = {
+    hero : "defaultHero"
 }
 
 export default Hero
