@@ -5,13 +5,16 @@ import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 //import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {RoomProvider} from './context';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <RoomProvider>
+    <React.StrictMode>
+      <Router>
+        <App />
+      </Router>
+    </React.StrictMode>
+  </RoomProvider>,
   document.getElementById('root')
 );
 
