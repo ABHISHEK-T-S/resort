@@ -4,7 +4,7 @@ import Banner from '../Components/Banner'
 import { Link } from 'react-router-dom'
 import Services from '../Components/Services'
 import Title from '../Components/Title'
-import { FeaturedRooms} from '../Components/FeaturedRooms'
+import  FeaturedRooms from '../Components/FeaturedRooms'
 
 export const Home = () => {
     return (
